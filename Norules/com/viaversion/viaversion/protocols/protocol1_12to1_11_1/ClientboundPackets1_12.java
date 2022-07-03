@@ -1,0 +1,96 @@
+package com.viaversion.viaversion.protocols.protocol1_12to1_11_1;
+
+import com.viaversion.viaversion.api.protocol.packet.*;
+
+public enum ClientboundPackets1_12 implements ClientboundPacketType
+{
+    SERVER_DIFFICULTY, 
+    ADVANCEMENTS, 
+    UPDATE_SCORE, 
+    MULTI_BLOCK_CHANGE, 
+    ENTITY_HEAD_LOOK, 
+    SCOREBOARD_OBJECTIVE, 
+    SPAWN_PLAYER, 
+    CHAT_MESSAGE, 
+    TITLE, 
+    UPDATE_HEALTH, 
+    ENTITY_MOVEMENT, 
+    ENTITY_EQUIPMENT, 
+    SPAWN_PARTICLE, 
+    DISPLAY_SCOREBOARD, 
+    JOIN_GAME, 
+    USE_BED, 
+    PLAYER_INFO, 
+    ENTITY_EFFECT, 
+    GAME_EVENT, 
+    ENTITY_VELOCITY, 
+    SET_EXPERIENCE, 
+    HELD_ITEM_CHANGE, 
+    TIME_UPDATE, 
+    ENTITY_METADATA, 
+    BOSSBAR, 
+    OPEN_WINDOW, 
+    TAB_COMPLETE, 
+    WINDOW_PROPERTY, 
+    ENTITY_PROPERTIES, 
+    WINDOW_ITEMS, 
+    PLAYER_ABILITIES, 
+    RESOURCE_PACK, 
+    SOUND, 
+    PLUGIN_MESSAGE, 
+    RESPAWN, 
+    SET_PASSENGERS, 
+    KEEP_ALIVE, 
+    VEHICLE_MOVE, 
+    COLLECT_ITEM, 
+    BLOCK_ACTION, 
+    WORLD_BORDER, 
+    COOLDOWN, 
+    EXPLOSION, 
+    ENTITY_ROTATION, 
+    STATISTICS, 
+    ATTACH_ENTITY, 
+    COMBAT_EVENT, 
+    PLAYER_POSITION, 
+    MAP_DATA, 
+    UNLOAD_CHUNK, 
+    NAMED_SOUND, 
+    UNLOCK_RECIPES, 
+    CAMERA, 
+    BLOCK_CHANGE, 
+    CHUNK_DATA, 
+    BLOCK_ENTITY_DATA, 
+    REMOVE_ENTITY_EFFECT, 
+    ENTITY_POSITION_AND_ROTATION, 
+    SPAWN_POSITION, 
+    BLOCK_BREAK_ANIMATION, 
+    ENTITY_STATUS, 
+    SPAWN_GLOBAL_ENTITY, 
+    SPAWN_EXPERIENCE_ORB, 
+    TAB_LIST, 
+    SPAWN_MOB, 
+    WINDOW_CONFIRMATION, 
+    CLOSE_WINDOW, 
+    ENTITY_TELEPORT, 
+    EFFECT, 
+    SET_SLOT, 
+    OPEN_SIGN_EDITOR, 
+    ENTITY_ANIMATION, 
+    SPAWN_ENTITY, 
+    ENTITY_POSITION, 
+    DISCONNECT, 
+    SPAWN_PAINTING, 
+    SELECT_ADVANCEMENTS_TAB, 
+    TEAMS, 
+    DESTROY_ENTITIES;
+    
+    @Override
+    public String getName() {
+        return this.name();
+    }
+    
+    @Override
+    public int getId() {
+        return this.ordinal();
+    }
+}
